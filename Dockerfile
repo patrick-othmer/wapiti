@@ -10,7 +10,7 @@ RUN buildDeps="libxml2-dev libxslt-dev python3-dev musl-dev gcc" && \
 runDeps="openssl libxml2 libxslt" && \
 apk --update add $runDeps $buildDeps && \
 pip install beautifulsoup4 requests && \
-mkdir /opt /work && cd /opt && \
+mkdir -p /opt /work && cd /opt && \
 wget "http://downloads.sourceforge.net/project/wapiti/wapiti/wapiti-$VERSION_WAPITI/wapiti3-$VERSION_WAPITI.tar.gz" && \
 tar xvzf wapiti3-$VERSION_WAPITI.tar.gz && \
 rm wapiti3-$VERSION_WAPITI.tar.gz && \
