@@ -1,6 +1,6 @@
 FROM python:alpine3.8
 
-ENV VERSION_WAPITI 3.0.1
+ENV VERSION_WAPITI 3.0.2
 
 ENV LANG en
 ENV PATH /opt/wapiti/bin:$PATH
